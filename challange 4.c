@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 int a, b, r;
-int divededby(int a,int b)
-{
+int divededby(int a,int b) {
     r = a / b;
     return r;
 }
