@@ -1,0 +1,40 @@
+  
+#include <stdbool.h>
+
+
+bool isPremier();
+int number = 0;
+bool is_premier;
+int v = 0;
+
+int main()
+{
+   printf("entrer number : ");
+   scanf("%d",&number);
+   isPremier(number);
+
+    if(is_premier == true){
+        printf("%d est premier. \n",number);
+    }
+    else{
+        printf("%d  n'est pas premier. \n",number);
+    }
+}
+
+
+bool isPremier(int index)
+{
+    for(int i = 1;i <= index;i++){
+        if((number % i) == 0){
+            v++;
+        }
+    }
+    if(v == 2){
+        is_premier = true;
+        v = 0;
+    }
+    else{
+        is_premier = false;
+        v = 0;
+    }
+}
